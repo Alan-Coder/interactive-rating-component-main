@@ -1,0 +1,99 @@
+:root{
+    /* ### Primary */
+    --orange: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+    --white: hsla(0, 0%, 100%, 0.719);
+    --light-grey: hsla(217, 12%, 63%, 0.444);
+    --medium-grey: hsla(216, 12%, 54%, 0.859);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    /* Tipography */
+    --texts: 'Overpass', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--very-dark-blue);
+    color: white;
+}
+
+.main{
+    width: 300px;
+    margin: 0 auto;
+    
+}
+.card{
+    width: 100%;
+    margin-top: 150px;
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    border-radius: 15px;
+}
+
+.card__title{
+    font-family: var(--texts);
+    margin: 8px 0;
+}
+
+.card__paragraph{
+    font-family: var(--texts);
+    font-size: 12px;
+    color: var(--white);
+    margin-bottom: 25px;
+    line-height: 1.5em;
+}
+
+.card__btn-star a img{
+    background-color: var(--light-grey);
+    padding: .5em;
+    border-radius: 50%;
+}
+
+.card__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card__buttons a{
+    background-color: var(--light-grey);
+    padding: 10px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--texts);
+    font-size: 12px;
+}
+
+.card__buttons a:hover{
+    background-color: var(--orange);
+}
+
+.boton{
+    display: flex;
+}
+
+.boton a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--texts);
+    letter-spacing: 2px;
+    background-color: var(--orange);
+    padding: .5em 5.5em;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+.boton a:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
